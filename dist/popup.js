@@ -1,5 +1,11 @@
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!**********************!*\
+  !*** ./src/popup.js ***!
+  \**********************/
 const docBody = document.querySelector("body");
-if (docBody) {
+const meta = document.querySelector("meta[name=description][content=popup]");
+if (docBody && meta) {
   function createNewButton(callback, buttonText = "Function", callbackArgs = []) {
     const wishListButton = document.createElement("button")
     wishListButton.addEventListener("click", async function () {
@@ -25,3 +31,6 @@ if (docBody) {
 
   createNewButton(getWishListVals, "Get Wish List Total");
 }
+/******/ })()
+;
+//# sourceMappingURL=popup.js.map
