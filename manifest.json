@@ -1,0 +1,18 @@
+{
+  "name": "ChromeExt",
+  "description": "Useful bits of code",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "Choose your script",
+    "default_popup": "popup.html"
+  }
+}
